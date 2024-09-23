@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 namespace FociWebApplication.Models
 {
-    public class Match
+    public class Meccs
     {
         
         int id;
@@ -15,7 +15,7 @@ namespace FociWebApplication.Models
         string vendegCsapat;
         string vegEredmeny;
 
-        public Match(string[] tomb)
+        public Meccs(string[] tomb)
         {
             fordulo = int.Parse(tomb[0]);
             hazaGolok = int.Parse(tomb[1]);
@@ -25,7 +25,7 @@ namespace FociWebApplication.Models
             hazaiCsapat = tomb[5];
             vendegCsapat = tomb[6];
         }
-        public Match()
+        public Meccs()
         {
             
         }
